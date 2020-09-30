@@ -1,12 +1,10 @@
 package main
 
 import (
-	"chap1"
 	"os"
 	"fmt"
-	"standard"
 
-	
+	"chap1"
 )
 
 func main(){
@@ -15,9 +13,10 @@ func main(){
 		return
 	}
 
-	
-	runners := []standard.Runner{&chap1.Chap1{}}
+	chapter := parseArgument(os.Args[1])
+	question := parseArgument(os.Args[2])
 
+	chap1.
 }
 
 func parseArgument(input string) int {
