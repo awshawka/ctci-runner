@@ -15,9 +15,12 @@ func main(){
 		return
 	}
 
-	
+	c := parseArgument(os.Args[1])
+	q := parseArgument(os.Args[2])
+
 	runners := []standard.Runner{&chap1.Chap1{}}
 
+	runners[c-1].Run(q-1)
 }
 
 func parseArgument(input string) int {
